@@ -49,6 +49,16 @@
           position: "top-left"
         });
 
+        // Create featurelayer from feature service 
+        const layer = new FeatureLayer({ 
+          // URL to the service 
+          url: "https://services.arcgis.com/LBbVDC0hKPAnLRpO/arcgis/rest/services/survey123_73f6db1705c6427f9f0a92cacc8735c4_results/FeatureServer" //Your item URL Goes Here
+        });
+
+        //adding layer to map
+        map.add(layer);
+
+
         const searchWidget = new Search({
           view: view
         });
