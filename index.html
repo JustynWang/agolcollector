@@ -44,15 +44,15 @@
           view: view
         });
 
+                // Create featurelayer from feature service 
+                const layer = new FeatureLayer({ 
+          // URL to the service 
+          url: "https://services.arcgis.com/LBbVDC0hKPAnLRpO/arcgis/rest/services/survey123_73f6db1705c6427f9f0a92cacc8735c4_results/FeatureServer" //Your item URL Goes Here
+        });
+
         // Add the locate widget to the top left corner of the view
         view.ui.add(locateBtn, {
           position: "top-left"
-        });
-
-        // Create featurelayer from feature service 
-        const layer = new FeatureLayer({ 
-          // URL to the service 
-          url: "https://services.arcgis.com/LBbVDC0hKPAnLRpO/arcgis/rest/services/survey123_73f6db1705c6427f9f0a92cacc8735c4_results/FeatureServer" //Your item URL Goes Here
         });
 
         //adding layer to map
